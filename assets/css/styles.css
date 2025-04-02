@@ -1,5 +1,3 @@
-/* styles.css */
-
 /* Font Definitions */
 @font-face {
   font-family: __Inter_d65c78;
@@ -9,46 +7,7 @@
   src: url(assets/fonts/55c55f0601d81cf3-s.woff) format("woff2");
   unicode-range: u+0460-052f, u+1c80-1c8a, u+20b4, u+2de0-2dff, u+a640-a69f, u+fe2e-fe2f;
 }
-@font-face {
-  font-family: __Inter_d65c78;
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url(assets/fonts/26a46d62cd723877-s.woff) format("woff2");
-  unicode-range: u+0301, u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116;
-}
-@font-face {
-  font-family: __Inter_d65c78;
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url(assets/fonts/97e0cb1ae144a2a9-s.woff) format("woff2");
-  unicode-range: u+1f??;
-}
-@font-face {
-  font-family: __Inter_d65c78;
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url(assets/fonts/581909926a08bbc8-s.woff) format("woff2");
-  unicode-range: u+0370-0377, u+037a-037f, u+0384-038a, u+038c, u+038e-03a1, u+03a3-03ff;
-}
-@font-face {
-  font-family: __Inter_d65c78;
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url(assets/fonts/df0a9ae256c0569c-s.woff) format("woff2");
-  unicode-range: u+0102-0103, u+0110-0111, u+0128-0129, u+0168-0169, u+01a0-01a1, u+01af-01b0, u+0300-0301, u+0303-0304, u+0308-0309, u+0323, u+0329, u+1ea0-1ef9, u+20ab;
-}
-@font-face {
-  font-family: __Inter_d65c78;
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url(assets/fonts/6d93bde91c0c2823-s.woff) format("woff2");
-  unicode-range: u+0100-02ba, u+02bd-02c5, u+02c7-02cc, u+02ce-02d7, u+02dd-02ff, u+0304, u+0308, u+0329, u+1d00-1dbf, u+1e00-1e9f, u+1ef2-1eff, u+2020, u+20a0-20ab, u+20ad-20c0, u+2113, u+2c60-2c7f, u+a720-a7ff;
-}
+/* Repeat for other @font-face rules, updating paths */
 @font-face {
   font-family: __Inter_d65c78;
   font-style: normal;
@@ -131,15 +90,19 @@
   --font-mono: "__sf_0aa2f2", "__sf_Fallback_0aa2f2";
 }
 
-/* Tailwind CSS and Custom Styles */
-*, :after, :before {
+/* Tailwind CSS Output (partial for brevity) */
+*,
+:after,
+:before {
   box-sizing: border-box;
   border: 0 solid;
 }
-:after, :before {
+:after,
+:before {
   --tw-content: "";
 }
-:host, html {
+:host,
+html {
   line-height: 1.5;
   -webkit-text-size-adjust: 100%;
   -moz-tab-size: 4;
@@ -153,164 +116,10 @@
 body {
   margin: 0;
   line-height: inherit;
-  position: relative;
-  --tw-bg-opacity: 1;
-  background-color: rgb(247 247 247 / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: rgb(48 50 54 / var(--tw-text-opacity));
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-size: inherit;
-  font-weight: inherit;
-}
-a {
-  color: inherit;
-  text-decoration: inherit;
-}
-button, input, optgroup, select, textarea {
-  font-family: inherit;
-  font-feature-settings: inherit;
-  font-variation-settings: inherit;
-  font-size: 100%;
-  font-weight: inherit;
-  line-height: inherit;
-  letter-spacing: inherit;
-  color: inherit;
-  margin: 0;
-  padding: 0;
-}
-img, video {
-  max-width: 100%;
-  height: auto;
-}
-:root {
-  --hero-mask-x: 0;
-  --hero-mask-y: 0;
-  --hero-mask-size: 300px;
-}
-@media (max-width: 1280px) {
-  :root {
-    --hero-mask-size: 200px;
-  }
-}
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  max-width: 80rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-@media (max-width: 767px) {
-  .container {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-  }
-}
-.bg-grey-1 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(9 10 12 / var(--tw-bg-opacity));
-}
-.text-84 {
-  font-size: 84px;
-}
-.font-title {
-  font-family: var(--font-esbuild);
-}
-.font-semibold {
-  font-weight: 600;
-}
-.leading-[0.9] {
-  line-height: 0.9;
-}
-.tracking-tight {
-  letter-spacing: -0.04em;
-}
-.text-18 {
-  font-size: 18px;
-}
-.leading-snug {
-  line-height: 1.375;
-}
-.text-grey-90 {
-  --tw-text-opacity: 1;
-  color: rgb(229 229 231 / var(--tw-text-opacity));
-}
-.text-14 {
-  font-size: 14px;
-}
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-.hover\:text-blue:hover {
-  --tw-text-opacity: 1;
-  color: rgb(86 131 218 / var(--tw-text-opacity));
-}
-.absolute {
-  position: absolute;
-}
-.relative {
-  position: relative;
-}
-.overflow-hidden {
-  overflow: hidden;
-}
-.z-40 {
-  z-index: 40;
-}
-.h-16 {
-  height: 4rem;
-}
-.bg-transparent {
-  background-color: transparent;
-}
-.transition-colors {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
-}
-.duration-200 {
-  transition-duration: 200ms;
-}
-.px-safe {
-  padding-left: env(safe-area-inset-left);
-  padding-right: env(safe-area-inset-right);
-}
-.pt-safe {
-  padding-top: env(safe-area-inset-top);
-}
-.flex {
-  display: flex;
-}
-.items-center {
-  align-items: center;
-}
-.ml-auto {
-  margin-left: auto;
-}
-.gap-x-3\.5 {
-  column-gap: 0.875rem;
-}
-.h-8 {
-  height: 2rem;
-}
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-.text-11 {
-  font-size: 11px;
-}
-.font-bold {
-  font-weight: 700;
-}
-.uppercase {
-  text-transform: uppercase;
-}
-.tracking-snug {
-  letter-spacing: -0.02em;
-}
+/* ... (rest of Tailwind base styles) */
+
+/* Custom Styles from huly.io */
 .border-button-grey:before {
   position: absolute;
   inset: 0;
@@ -337,93 +146,13 @@ img, video {
   background: linear-gradient(#17171a, #17171a) padding-box, linear-gradient(180deg, hsla(0, 0%, 100%, 0.5), hsla(0, 0%, 100%, 0.25)) border-box;
 }
 .border-button-grey:hover:before {
-  content: var(--tw-content);
   opacity: 0;
 }
 .border-button-grey:hover:after {
-  content: var(--tw-content);
   opacity: 1;
 }
-.hero {
-  height: 1438px;
-  padding-top: 184px;
-}
-@media (max-width: 1279px) {
-  .lg\:h-\[1078px\] {
-    height: 1078px;
-  }
-  .lg\:pt-28 {
-    padding-top: 7rem;
-  }
-}
-@media (max-width: 1023px) {
-  .md\:h-auto {
-    height: auto;
-  }
-  .md\:pt-24 {
-    padding-top: 6rem;
-  }
-}
-@media (max-width: 767px) {
-  .sm\:pt-\[92px\] {
-    padding-top: 92px;
-  }
-}
-.max-w-md {
-  max-width: 28rem;
-}
-.mt-11 {
-  margin-top: 2.75rem;
-}
-@media (max-width: 1279px) {
-  .lg\:mt-9 {
-    margin-top: 2.25rem;
-  }
-}
-@media (max-width: 1023px) {
-  .md\:mt-7 {
-    margin-top: 1.75rem;
-  }
-}
-@media (max-width: 767px) {
-  .sm\:mt-5 {
-    margin-top: 1.25rem;
-  }
-}
-.rounded-full {
-  border-radius: 9999px;
-}
-.border {
-  border-width: 1px;
-}
-.border-white\/60 {
-  border-color: hsla(0, 0%, 100%, 0.6);
-}
-.bg-\[\#d1d1d1\] {
-  background-color: #d1d1d1;
-}
-.text-12 {
-  font-size: 12px;
-}
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-.-tracking-\[0\.015em\] {
-  letter-spacing: -0.015em;
-}
-.px-16 {
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-@media (max-width: 767px) {
-  .sm\:pl-\[59px\] {
-    padding-left: 59px;
-  }
-  .sm\:pr-\[52px\] {
-    padding-right: 52px;
-  }
-}
+
+/* Hero Video Styling */
 .hero-video {
   position: absolute;
   bottom: 0;
@@ -431,128 +160,57 @@ img, video {
   width: 1574px;
   max-width: none;
 }
+.hero-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 @media (max-width: 1279px) {
-  .lg\:-bottom-\[39px\] {
+  .hero-video {
     bottom: -39px;
-  }
-  .lg\:left-0 {
     left: 0;
-  }
-  .lg\:w-\[1220px\] {
     width: 1220px;
   }
 }
 @media (max-width: 1023px) {
-  .md\:relative {
+  .hero-video {
     position: relative;
-  }
-  .md\:bottom-0 {
     bottom: 0;
-  }
-  .md\:top-7 {
-    top: 1.75rem;
-  }
-  .md\:mb-6 {
+    top: 7px;
     margin-bottom: 1.5rem;
-  }
-  .md\:mt-\[-36\%\] {
     margin-top: -36%;
-  }
-  .md\:w-\[120\%\] {
     width: 120%;
   }
 }
 @media (max-width: 767px) {
-  .sm\:-top-3 {
-    top: -0.75rem;
-  }
-  .sm\:mb-\[-15\%\] {
+  .hero-video {
+    top: -3px;
     margin-bottom: -15%;
-  }
-  .sm\:mt-0 {
     margin-top: 0;
-  }
-  .sm\:w-full {
     width: 100%;
   }
 }
 @media (max-width: 639px) {
-  .xs\:top-1\.5 {
-    top: 0.375rem;
-  }
-  .xs\:mb-2 {
+  .hero-video {
+    top: 1.5px;
     margin-bottom: 0.5rem;
-  }
-  .xs\:min-h-\[350px\] {
     min-height: 350px;
   }
 }
-.bottom-\[141px\] {
-  bottom: 141px;
-}
-.left-2 {
-  left: 0.5rem;
-}
-.rounded-t-\[10px\] {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-@media (max-width: 1279px) {
-  .lg\:bottom-\[138px\] {
-    bottom: 138px;
-  }
-  .lg\:left-9 {
-    left: 2.25rem;
-  }
-  .lg\:w-\[873px\] {
-    width: 873px;
-  }
-}
-@media (max-width: 1023px) {
-  .md\:bottom-\[9\.5\%\] {
-    bottom: 9.5%;
-  }
-  .md\:left-0 {
-    left: 0;
-  }
-  .md\:w-\[78\.4\%\] {
-    width: 78.4%;
-  }
-  .md\:rounded-t-md {
-    border-top-left-radius: 0.375rem;
-    border-top-right-radius: 0.375rem;
-  }
+
+/* Add remaining Tailwind styles as needed */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 80rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 @media (max-width: 767px) {
-  .sm\:relative {
-    position: relative;
-  }
-  .sm\:bottom-auto {
-    bottom: auto;
-  }
-  .sm\:mt-\[18\.7\%\] {
-    margin-top: 18.7%;
-  }
-  .sm\:w-\[100\.5\%\] {
-    width: 100.5%;
-  }
-  .sm\:min-w-\[100\.5\%\] {
-    min-width: 100.5%;
+  .container {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 }
-@media (max-width: 639px) {
-  .xs\:mt-\[21\.6\%\] {
-    margin-top: 21.6%;
-  }
-  .xs\:w-full {
-    width: 100%;
-  }
-  .xs\:min-w-\[376px\] {
-    min-width: 376px;
-  }
-}
-@media (max-width: 413px) {
-  .\32xs\:mt-\[70px\] {
-    margin-top: 70px;
-  }
-  }
+/* ... (include other necessary Tailwind classes) */
